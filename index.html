@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Silver Surfer's Quest</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>The Silver Surfer's Quest! Damsel In Distress</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <div id="game-container">
         <h1>The Silver Surfer's Quest! Damsel In Distress</h1>
+
+        <!-- Display the game instructions -->
         <div id="instructions">
             <p>Welcome to the game! You are the amazing Marvel superhero, THE SILVER SURFER.</p>
             <p>Your mission is to collect all 6 items located throughout the 8 rooms before reaching the final room so you can save the Damsel in distress.</p>
             <p>Use the buttons below to move through the rooms and collect items. Good luck!</p>
         </div>
 
+        <!-- Display the player's current status -->
         <div id="game-status">
             <p id="current-room">You are in: Abandoned Laboratory</p>
             <p id="current-inventory">Your Inventory: []</p>
             <p id="current-item"></p>
         </div>
 
+        <!-- Control buttons for movement -->
         <div id="controls">
             <button onclick="move('North')">North</button>
             <button onclick="move('West')">West</button>
             <button onclick="move('East')">East</button>
             <button onclick="move('South')">South</button>
-            <button onclick="pickUpItem()">Pick Up Item</button>
         </div>
+
+        <!-- Button to pick up items -->
+        <button id="pick-up-btn" onclick="pickUpItem()">Pick Up Item</button>
     </div>
-    <script src="main.js"></script>
+
+    <script src="main.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
